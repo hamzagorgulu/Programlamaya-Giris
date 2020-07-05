@@ -1,0 +1,9 @@
+#include<stdio.h>
+#define pi 3.1415
+
+int main(){
+	float r=5.75;
+	float daire_alani;
+	daire_alani=pi*r*r;
+	printf("dairenin alani %f",daire_alani);
+}
