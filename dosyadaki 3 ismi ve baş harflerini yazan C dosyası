@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+	FILE *dosya;
+	char isim1[15],isim2[15],isim3[15],kisaltma[3];
+	dosya= fopen("isimler.txt","r");
+	if ((dosya= fopen("isimler.txt","r"))!=NULL){
+		fscanf(dosya,"%s",&isim1);
+		fscanf(dosya,"%s",&isim2);
+		fscanf(dosya,"%s",&isim3);
+		printf("Isimler =>  %s   %s   %s   \nBas harfler=>   %c %c %c",isim1,isim2,isim3,isim1[0],isim2[0],isim3[0]);
+	}
+	else printf("dosya acilmamis");
+}
