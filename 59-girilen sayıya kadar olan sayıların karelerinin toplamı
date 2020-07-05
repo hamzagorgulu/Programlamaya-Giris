@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+	int a;
+	int toplam;
+	printf("sayi gir:");  scanf("%d",&a);
+	for (int i=0;i<a;i++){
+		toplam= toplam+i*i;
+	}
+	printf("%d",toplam);
+}
